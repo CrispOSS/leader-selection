@@ -11,6 +11,9 @@
 	<packaging>jar</packaging>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<version.abs-api>0.6</version.abs-api>
 	</properties>
 
 	<build>
@@ -30,7 +33,7 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>abs-api-remote</artifactId>
-			<version>${project.version}</version>
+			<version>${version.abs-api}</version>
 		</dependency>
 	</dependencies>
 
