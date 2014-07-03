@@ -1,12 +1,11 @@
 package com.github.crisposs.leaderselection;
 
-import java.net.UnknownHostException;
 
 public class Main {
 
-	public static void main(String[] args) throws UnknownHostException, InterruptedException {
+	public static void main(String[] args) throws Exception {
 
-		int n = 30;
+		int n = 100;
 		if (args.length != 0) {
 			n = Integer.parseInt(args[0]);
 		}

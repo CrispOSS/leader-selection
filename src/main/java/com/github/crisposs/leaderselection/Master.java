@@ -1,6 +1,5 @@
 package com.github.crisposs.leaderselection;
 
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -19,7 +18,7 @@ public class Master extends AbstractNode implements Actor, Node, VoteCollector {
 	private List<Integer> nodes;
 	private final int workers;
 
-	public Master(int workers) throws UnknownHostException {
+	public Master(int workers) throws Exception {
 		super(0);
 		this.workers = workers;
 		this.nodes = new ArrayList<>(workers);

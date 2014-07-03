@@ -1,6 +1,5 @@
 package com.github.crisposs.leaderselection;
 
-import java.net.UnknownHostException;
 import java.util.Random;
 
 import abs.api.Actor;
@@ -17,7 +16,7 @@ public class Worker extends AbstractNode implements Actor, Node, LeaderSelector 
 	Random random = new Random(System.currentTimeMillis());
 	int leader = -1;
 
-	public Worker(int n) throws UnknownHostException {
+	public Worker(int n) throws Exception {
 		super(n);
 		start();
 	}

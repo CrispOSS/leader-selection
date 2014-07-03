@@ -1,6 +1,5 @@
 package com.github.crisposs.leaderselection;
 
-import java.net.UnknownHostException;
 import java.util.Properties;
 
 import org.slf4j.Logger;
@@ -36,7 +35,7 @@ public abstract class AbstractNode implements Node {
 		return p;
 	}
 
-	protected void start() throws UnknownHostException {
+	protected void start() throws Exception {
 		if (self == null) {
 			server = new ActorServer(getProperties());
 			self = server.context.newActor(getName(), this);
